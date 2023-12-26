@@ -20,7 +20,7 @@ This project utilizes the following technologies:
 
 ## Setup
 
-To run the project, open this in a new tab: [link](https://kpilszak.github.io/candy-crush-react/)
+To run the project, open this in a new tab: <a href="https://kpilszak.github.io/candy-crush-react/">https://kpilszak.github.io/candy-crush-react/</a>
 
 ## Acknowledgments
 
