@@ -1,4 +1,4 @@
-<h1 align="right">Candy Crush In React 🍭🎮</h1><br>
+<h1 align="right">WIP: Candy Crush In React 🍭🎮</h1><br>
 
 ## Table of Contents
 - [Overview](#overview)
