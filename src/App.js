@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const width = 8
 const candyColors = [
@@ -23,7 +23,9 @@ const App = () => {
     setCurrentColoerArrangement(randomColorArrangement)
   }
 
-  createBoard()
+  useEffect(() => {
+      createBoard()
+  }, [])
 
     console.log(currentColorArrangement)
 
