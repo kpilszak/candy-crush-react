@@ -8,7 +8,7 @@
 
 ## Overview
 
-Welcome to the Candy Crush in React project! 🚀 This application brings the classic Candy Crush game to life using the power of React. Swipe candies in any direction (as long as it's not blocked) to create sets of matching candies. With 6 vibrant colors, the challenge is to match 3 or 4 candies of the same color in rows or columns.
+Welcome to the Candy Crush in React project! 🚀 This application brings the classic Candy Crush game to life using the power of React. Move candies in any direction (as long as it's not blocked) to create sets of matching candies. With 6 vibrant colors, the challenge is to match 3 or 4 candies of the same color in rows or columns.
 
 ## Technologies
 
