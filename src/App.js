@@ -22,6 +22,7 @@ const App = () => {
     const [currentColorArrangement, setCurrentColorArrangement] = useState([])
     const [squareBeingDragged, setSquareBeingDragged] = useState(null)
     const [squareBeingReplaced, setSquareBeingReplaced] = useState(null)
+    const [scoreDisplay, setScoreDisplay] = useState(0)
 
     const checkForColumnOfFour = () => {
         for (let i = 0; i <= 39; i++) {
@@ -29,6 +30,7 @@ const App = () => {
             const decidedColor = currentColorArrangement[i]
 
             if (columnOfFour.every(square => currentColorArrangement[square] === decidedColor)) {
+                setScoreDisplay((score) => score + 4)
                 columnOfFour.forEach(square => currentColorArrangement[square] = blank)
                 return true
             }
@@ -41,6 +43,7 @@ const App = () => {
             const decidedColor = currentColorArrangement[i]
 
             if (columnOfThree.every(square => currentColorArrangement[square] === decidedColor)) {
+                setScoreDisplay((score) => score + 3)
                 columnOfThree.forEach(square => currentColorArrangement[square] = blank)
                 return true
             }
@@ -56,6 +59,7 @@ const App = () => {
             if (notValid.includes(i)) continue
 
             if (rowOfFour.every(square => currentColorArrangement[square] === decidedColor)) {
+                setScoreDisplay((score) => score + 4)
                 rowOfFour.forEach(square => currentColorArrangement[square] = blank)
                 return true
             }
@@ -71,6 +75,7 @@ const App = () => {
             if (notValid.includes(i)) continue
 
             if (rowOfThree.every(square => currentColorArrangement[square] === decidedColor)) {
+                setScoreDisplay((score) => score + 3)
                 rowOfThree.forEach(square => currentColorArrangement[square] = blank)
                 return true
             }
